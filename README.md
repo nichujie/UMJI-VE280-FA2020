@@ -22,7 +22,7 @@
 * Good coding style & habit: readable variable names, necessay comments, avoid duplication, subroutines (Single Responsibility Principle), consistent indentation.
 * Start early and enjoy.
 
-<div align=center>![Single Responsibility Principle](https://github.com/nichujie/UMJI-VE280-FA2020/blob/master/img/srp.jpg)</div>
+<div align=center><img src="https://github.com/nichujie/UMJI-VE280-FA2020/blob/master/img/srp.jpg"/></div>
 
 ## Credit
 
