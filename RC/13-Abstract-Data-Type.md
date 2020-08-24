@@ -76,9 +76,9 @@ Also, using getters/setters allows you to add extra operations when getting/modi
 class Student {
     int    score;
   public:
-  	// A getter of score, qualified as const
+    // A getter of score, qualified as const
     int    getScore() const {return this->score;};
-  	// A setter of score. New scores lower than 0 is regarded as illegal.
+    // A setter of score. New scores lower than 0 is regarded as illegal.
     void   setScore(int newScore) {
       if (newScore < 0) {
         cout << "How is that possible?" << endl;
