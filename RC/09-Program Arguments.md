@@ -57,9 +57,43 @@ rm file
 
 ## Args in CLion
 
-<img src="../img/clion-terminal.png" alt="clion-terminal" style="zoom:50%;" />
+* You can use the terminal in CLion. This evokes your system terminal.
 
+<img src="../img/clion-terminal.png" alt="clion-terminal" style="zoom:40%;" />
 
+* Or you can directly add program arguments to the run configurations. Then each time you press the triangle to run, there will be your program arguments.
+
+<img src="../img/clion-edit-config.png" alt="clion-edit-config" style="zoom:40%;" />
+
+<img src="../img/clion-args.png" alt="clion-args" style="zoom:30%;" />
+
+* Each run configuration can only has one set of fixed program arguments. You can add more configurations to store some frequently used program arguments (such as for debugging).
+
+<img src="../img/clion-add-config.png" alt="clion-add-config" style="zoom:30%;" />
+
+> Working Directory: Clion allows you to change the working directory of your program. If you don't specify, the working directory will be `cmake-build-debug` instead of where your source file is. If you want to use CLion build as you are compiling in the terminal, you need to specify this.
+>
+> <img src="../img/clion-wkdir.png" alt="clion-wkdir" style="zoom:40%;" />a
+>
+> If you run the program in terminal, then the working directory is the **current directory **(where you run the program, not where the source file or program is).
+>
+> ```cpp
+> #include <iostream>
+> #include <fstream>
+> using namespace std;
+> 
+> int main (int argc, char *argv[]) {
+>   	// Here since relative path is used, the program will 
+>   	// only open text.txt in working directory.
+> 		ifstream inFile("text.txt");
+>   	string s;
+>   	inFile >> s;
+>   	cout << s << endl;
+> 		return 0;
+> }
+> ```
+>
+> 
 
 ## Credit
 
