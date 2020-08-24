@@ -78,6 +78,7 @@ class Student {
   public:
     // A getter of score, qualified as const
     int    getScore() const {return this->score;};
+  
     // A setter of score. New scores lower than 0 is regarded as illegal.
     void   setScore(int newScore) {
       if (newScore < 0) {
@@ -90,6 +91,72 @@ class Student {
 ```
 
 This validation cannot be done by directly assigning values.
+
+## Representation Invariant
+
+This invariant is a rule that the representation must obey both **immediately before** and **immediately after** any method's execution. In simpler language:
+
+* An ADT must still be legal no matter how your customer use it
+* This is achieved by carefully writing each methods
+* **"immediately before"** guarantees your following operations can be done correctly (if you are given a set like {1,1,2,2,3}, then even if you write the method `remove()` correctly, the result will not be correct)
+* **"immediately after"** guarantees your operations by far are legal. This ensures that further operations can be done correctly.
+
+## More on C++ class
+
+### Initialization List
+
+```cpp
+ClsName::ClsName() : base(..), m1(..), m2(..) {
+       // Code for the some other operations need to be done during construction
+}
+```
+
+* The order of initialization **is the order they are defined in the class**
+* The performance (both time and memory) can be better than assigning to each values.
+* A member that don’t have a default constructor must be initialized in the initialization list.
+* const members and references can only be initialized in the initialization list.
+
+### const Member Functions
+
+* A `const` qualifier after **member functions** promises that this member function will not modify this object. 
+
+```cpp
+class Sample {
+    int val;
+public:
+    void setVal() const { val = 0; }	// Compile error
+};
+```
+
+* Also, inside a `const` member function, non-const member functions (as well as other functions that may modify the object) cannot be called (to ensure that the object will not be modified).
+
+```cpp
+void ordinary_func (int &d) {
+    d = 666;
+}
+
+class Sample {
+public:
+    int a;
+    int b;
+public:
+    int getA() const { return a; };
+    int getB() { return b; }
+    void setVal() const { 
+        int tmp1 = getA();
+        int tmp2 = getB();  // not OK, getB() should be qualified as const
+        ordinary_func(a);   
+      	// not OK, "a" is automatically cast into "const int" 
+      	// in this member function
+    }
+};
+```
+
+* This qualifer tells the compiler to check. It protects the object by casting all member variabales into `const`, as well as `this`.
+
+## Suggestion
+
+Look deep into the slides, especially the IntSet example.
 
 ## Credit
 
