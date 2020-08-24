@@ -63,17 +63,17 @@ rm file
 
 * Or you can directly add program arguments to the run configurations. Then each time you press the triangle to run, there will be your program arguments.
 
-<img src="../img/clion-edit-config.png" alt="clion-edit-config" width="50%" height="50%" style="zoom:40%;" />
+<img src="../img/clion-edit-config.png" alt="clion-edit-config" width="40%" height="40%" style="zoom:40%;" />
 
-<img src="../img/clion-args.png" alt="clion-args" width="50%" height="50%" style="zoom:30%;" />
+<img src="../img/clion-args.png" alt="clion-args" width="60%" height="60%" style="zoom:30%;" />
 
 * Each run configuration can only has one set of fixed program arguments. You can add more configurations to store some frequently used program arguments (such as for debugging).
 
-<img src="../img/clion-add-config.png" alt="clion-add-config" width="50%" height="50%" style="zoom:30%;" />
+<img src="../img/clion-add-config.png" alt="clion-add-config" width="60%" height="60%" style="zoom:30%;" />
 
 > Working Directory: Clion allows you to change the working directory of your program. If you don't specify, the working directory will be `cmake-build-debug` instead of where your source file is. If you want to use CLion build as you are compiling in the terminal, you need to specify this.
 >
-> <img src="../img/clion-wkdir.png" alt="clion-wkdir" width="50%" height="50%" style="width:50%;height:50%;" />
+> <img src="../img/clion-wkdir.png" alt="clion-wkdir" width="40%" height="40%" style="width:50%;height:50%;" />
 >
 > If you run the program in terminal, then the working directory is the **current directory **(where you run the program, not where the source file or program is).
 >
