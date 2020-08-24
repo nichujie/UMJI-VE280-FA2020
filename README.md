@@ -6,12 +6,12 @@
 
 * Basic C++ knowledge (believe you have mastered C++ in VG101)
 * C++ compilers & your favorite way to write code and test
-* A linux environment (not compulsory, only suggested) Check [here](https://github.com/ve280/tutorials) to learn how to install. Besides these ways, I also recommend you find a server. [Aliyun](https://promotion.aliyun.com/ntms/act/campus2018.html), [Baidu](https://cloud.baidu.com/campaign/campus-2018/index.html) and other cloud service provides all have student plans. You can buy a cloud server in a relatively low price as a student (chances may be limited).
-* valgrind: a program you will use later in the course. You'd better try instally it on your own system. If not available, you can try a linux system.
+* A linux environment (not compulsory, only suggested) Check [here](https://github.com/ve280/tutorials) to learn how to install. Besides these ways, I also recommend you find a server. [Aliyun](https://promotion.aliyun.com/ntms/act/campus2018.html), [Baidu](https://cloud.baidu.com/campaign/campus-2018/index.html) and other cloud service providers all have student plans. You can buy a cloud server in a relatively low price as a student (chances may be limited).
+* valgrind: a program you will use later in the course. You'd better try installing it on your own system. If not available, you can try a linux system.
 
 ### Lectures
 
-* You should be able to understand all the slides. You don't need to look too deep into the mechanism of C++. If you meet some confusing and weird knowledge, you can also just remember them (e.g. typedef)
+* You should be able to understand all the slides. You don't need to look too deep into the mechanism of C++. If you meet some confusing and weird knowledge, you can also just remember them (e.g. typedef).
 * Looking at the slides are also helpful when you are writing you projects.
 
 ### Projects
