@@ -6,8 +6,9 @@
 
 **Type** is a rather abstract concept. It can be defined independently of any programming languages. A type is always defined in two aspects:
 
-* The set of values that can be represented by items of the type
-* The set of operations that can be performed on items of the type.
+* The set of values that can be represented by items of the type
+
+* The set of operations that can be performed on items of the type.
 
 For example, `int` in cpp actually refers to signed integers, which supports basic arithmetic operations.
 
@@ -26,7 +27,7 @@ For example, `int` in cpp actually refers to signed integers, which supports bas
 
 ## Abstract Data Type
 
-ADTs provide an **abstract** **description** of **values** and **operations**. In short, to define an ADT, we only need to know:
+ADTs provide an **abstract** **description** of **values** and **operations**. In short, to define an ADT, we only need to know:
 
 * What values it represents: a mobile phone that can make and receive calls
 * What can it do to these values (operations): turn on/off, make/receive call, text message, play games...
