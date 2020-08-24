@@ -18,7 +18,7 @@ rm file
 > **Multiple commands in one line**
 >
 > ```bash
-> g++ test.cpp -o test && ./test	# Run immediately after compilation
+> g++ test.cpp -o test && ./test		# Run immediately after compilation
 > ```
 
 > **Simplest Shell Script** (Linux or OSX)
@@ -28,8 +28,8 @@ rm file
 >
 > ```
 > #!/bin/bash
-> clear									# Clear the screen
-> echo "Hello World"		# Greeting :)
+> clear                 # Clear the screen
+> echo "Hello World"    # Greeting :)
 > ```
 >
 > * Chang the permission of this file:
@@ -73,7 +73,7 @@ rm file
 
 > Working Directory: Clion allows you to change the working directory of your program. If you don't specify, the working directory will be `cmake-build-debug` instead of where your source file is. If you want to use CLion build as you are compiling in the terminal, you need to specify this.
 >
-> <img src="../img/clion-wkdir.png" alt="clion-wkdir" style="zoom:40%;" />a
+> <img src="../img/clion-wkdir.png" alt="clion-wkdir" style="width:50%;height:50%;" />
 >
 > If you run the program in terminal, then the working directory is the **current directory **(where you run the program, not where the source file or program is).
 >
