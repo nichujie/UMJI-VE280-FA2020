@@ -68,7 +68,7 @@ However, writing function definations in header files do has its advantages. For
 
 ### Getters & Setters
 
-These are two concepts widely used in OOP programming. Typically, getters & setters refers to those **member functions used to get or modify private members**. These methods allows outer codes to access certain attributes of the class. 
+These are two concepts widely used in OOP programming. Typically, getters & setters refer to those **member functions used to get or modify private members**. These methods allow outer codes to access certain attributes of the class. 
 
 Also, using getters/setters allows you to add extra operations when getting/modifying values. For example, validating the values when modifying an attribute:
 
@@ -156,7 +156,7 @@ public:
 
 ## Suggestion
 
-Look deep into the slides, especially the IntSet example.
+Look deep into the slides, especially the IntSet example. 
 
 ## Credit
 
