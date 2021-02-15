@@ -1,5 +1,7 @@
 # Dynamic Memory Allocation & Destructor
 
+@Chujie Ni
+
 ### Memory Management
 
 <img src="../img/memory.png" alt="clion-add-config" width="40%" height="40%" style="zoom:50%;" />
